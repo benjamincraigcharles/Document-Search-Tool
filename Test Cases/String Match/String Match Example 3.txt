@@ -1,0 +1,26 @@
+--- Welcome to the Document Search Tool ---
+
+Please enter your desired Search Term.
+Desired Search Term: the
+
+Please select one of the provided Document Search Methods:
+
+	1.) String Match
+	2.) Regular Expression
+	3.) Indexed
+
+Desired Document Search Method: String Match
+By default, the Document Search will only return Exact Matches, would you like to disable Exact Matching?
+Disable Exact Matching (yes / no): no
+
+By default, the Document Search will be Case-Sensitive, would you like to disable Case-Sensitivity?
+Disable Case-Sensitive Searching (yes / no): yes
+
+Search results for term: the
+
+	french_armed_forces.txt - 64 matches
+	hitchhikers.txt - 29 matches
+	warp_drive.txt - 6 matches
+
+Total Search Time: 2
+Total Elapsed Time: 38

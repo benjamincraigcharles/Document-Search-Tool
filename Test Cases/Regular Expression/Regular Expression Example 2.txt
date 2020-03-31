@@ -1,0 +1,23 @@
+--- Welcome to the Document Search Tool ---
+
+Please enter your desired Search Term.
+Desired Search Term: \b[a-zA-Z]{1,2}\b
+
+Please select one of the provided Document Search Methods:
+
+	1.) String Match
+	2.) Regular Expression
+	3.) Indexed
+
+Desired Document Search Method: Regular Expression
+By default, the Document Search will be Case-Sensitive, would you like to disable Case-Sensitivity?
+Disable Case-Sensitive Searching (yes / no): yes
+
+Search results for term: \b[a-za-z]{1,2}\b
+
+	french_armed_forces.txt - 103 matches
+	hitchhikers.txt - 74 matches
+	warp_drive.txt - 30 matches
+
+Total Search Time: 4
+Total Elapsed Time: 40

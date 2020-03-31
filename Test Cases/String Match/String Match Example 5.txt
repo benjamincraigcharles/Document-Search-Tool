@@ -1,0 +1,26 @@
+--- Welcome to the Document Search Tool ---
+
+Please enter your desired Search Term.
+Desired Search Term: erroneous_example
+
+Please select one of the provided Document Search Methods:
+
+	1.) String Match
+	2.) Regular Expression
+	3.) Indexed
+
+Desired Document Search Method: String Match
+By default, the Document Search will only return Exact Matches, would you like to disable Exact Matching?
+Disable Exact Matching (yes / no): no
+
+By default, the Document Search will be Case-Sensitive, would you like to disable Case-Sensitivity?
+Disable Case-Sensitive Searching (yes / no): no
+
+Search results for term: erroneous_example
+
+	warp_drive.txt - 0 matches
+	french_armed_forces.txt - 0 matches
+	hitchhikers.txt - 0 matches
+
+Total Search Time: 0
+Total Elapsed Time: 36
