@@ -57,15 +57,20 @@ public class DocumentSearchTool {
 	 */
 	private void processFiles( ) throws Exception {
 
-		File directory = new File( StringUtils.isEmpty( path ) ? DEFAULT_PATH : path );
-		if ( !directory.exists( ) || !directory.isDirectory( ) ) {
-			throw new IOException( "The specified directory: " + directory.getPath( ) + " does not exist." );
+		File indexDir = new File( INDEX_PATH );
+		if ( !indexDir.exists( ) ) {
+			indexDir.mkdir( );
+		}
+
+		File fileDir = new File( StringUtils.isEmpty( path ) ? DEFAULT_PATH : path );
+		if ( !fileDir.exists( ) || !fileDir.isDirectory( ) ) {
+			throw new IOException( "The specified directory: " + fileDir.getPath( ) + " does not exist." );
 		}
 
 		indexMap = new HashMap<>( );
 		startTime = System.nanoTime( );
 
-		List< File > files = Arrays.asList( Objects.requireNonNull( directory.listFiles( ) ) );
+		List< File > files = Arrays.asList( Objects.requireNonNull( fileDir.listFiles( ) ) );
 		if ( files.isEmpty( ) ) {
 			return;
 		}
@@ -160,6 +165,7 @@ public class DocumentSearchTool {
 		File index = new File( INDEX_PATH + "/index_" + file.getName( ) );
 		if ( index.exists( ) ) {
 			index.delete( );
+
 		}
 	}
 
