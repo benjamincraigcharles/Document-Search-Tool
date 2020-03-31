@@ -130,12 +130,12 @@ public class DocumentSearchTool {
 					determineStringMatches( content, file.getName( ) );
 
 				} else {
-					determineRegexMatches( "\\b" + term + "\\b", content, file.getName( ) );
+					determineRegexMatches( content, file.getName( ) );
 
 				}
 
 			} else if ( StringUtils.equalsIgnoreCase( method, SEARCH_METHODS.get( Method.REGULAR_EXPRESSION.ordinal( ) ) ) ) {
-				determineRegexMatches( term, content, file.getName( ) );
+				determineRegexMatches( content, file.getName( ) );
 
 			} else {
 				throw new Exception( "The specified Search Method: " + method + " does not exist." );
@@ -206,9 +206,9 @@ public class DocumentSearchTool {
 	 * number of Regular Expression matches as they are encountered and storing the
 	 * result within a HashMap for later use.
 	 */
-	private void determineRegexMatches( String searchTerm, String content, String filename ) {
+	private void determineRegexMatches( String content, String filename ) {
 		long matches = 0;
-		Pattern pattern = caseInsensitive ? Pattern.compile( searchTerm, Pattern.CASE_INSENSITIVE ) : Pattern.compile( searchTerm );
+		Pattern pattern = caseInsensitive ? Pattern.compile( term, Pattern.CASE_INSENSITIVE ) : Pattern.compile( term );
 
 		for ( Matcher matcher = pattern.matcher( content ); matcher.find( ); ) {
 			matches++;
