@@ -11,20 +11,26 @@ The aforementioned methods are as follows:
         1. Navigate to the source directory containing the Document Search Tool files.
         2. Compile the program using the following command:
             -$: javac DocumentSearchTool.java
+            
         3. Execute the program using the following command:
             -$: java DocumentSearchTool
+            
     
     IDE Compilation & Execution:
     
         1. Within the IDE of your choosing, import the Document Search Tool as a new Java Project.
         2. Once implemented, build the project with the corresponding command.
-            - For example:
+        
+            - Example:
                 IntelliJ - Build | Build Project
                 Eclipse - Project | Build Working Set
+                
         3. Execute the program using the corresponding run command.
-            - For example:
+        
+            - Example:
                 IntelliJ - Run | Run 'Document Search Tool'
                 Eclipse - Run | Run
+                
                 
 # General Interaction
 The program at hand is a dynamic search tool that processing user input via the console and returns the corresponding results in the order of their relevance to the specified search criteria. As such, all interaction with the program will be conducted via the console / commandline.
@@ -59,5 +65,21 @@ The program implements the following search methodologies, and their correspondi
         - Features:
                     
             1. Matching may be conducted Case-Sensitively or Case-Insensitively per the user's specification.
+            
 
 # Testing Behavior
+Testing of the program at hand may be conducted via the commandline, selecting each of the aforementioned features and asserting the corresponding results align with the expected result, or through the use of user specified test files. The user may provide their own files for testing / searching in one of two ways.
+
+The ways in which a user may specify a file or files for searching / testing are as follows:
+
+    1. Commandline Specification
+        - The user may specify the path to a directory containing the desired files by utilizing the "path" parameter upon commandline execution of the program. The program will search through all of the files within the specified directory be default.
+        
+        - Example:
+        
+            a. $: javac DocumentSearchTool.java
+            b. $: java DocumentSearchTool path "path/to/directory/"
+            
+    2. File System Submission
+        - The user may stage a set of files for searching / testing by copying said files into the "/sample_files/" directory within the Document Search Tool program. Please note that the "/sample_files/" directory is used by default if a path parameter has not been passed by the user upon execution.
+            
