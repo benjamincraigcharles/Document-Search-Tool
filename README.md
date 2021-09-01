@@ -33,7 +33,7 @@ The aforementioned methods are as follows:
                 
                 
 # General Interaction
-The program at hand is a dynamic search tool that processing user input via the console and returns the corresponding results in the order of their relevance to the specified search criteria. As such, all interaction with the program will be conducted via the console / commandline.
+The program at hand is a dynamic search tool that processes user input via the console and returns the corresponding results in the order of their relevance to the specified search criteria. As such, all interaction with the program will be conducted via the console / commandline.
 
 The program implements the following search methodologies, and their corresponding features.
 
